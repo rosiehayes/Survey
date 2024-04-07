@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cycling Survey</title>
+</head>
+<body>
+    <h1 id="title">Cycling in Our Community: A Brief Survey</h1>
+    <p id="description">Help us pedal towards a better future!</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+  
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Enter your age" min="13" max="120" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">How often do you ride a bicycle?</label>
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="daily">Daily</option>
+                <option value="several_times_week">Several times a week</option>
+                <option value="once_week">Once a week</option>
+                <option value="few_times_month">A few times a month</option>
+                <option value="rarely">Rarely</option>
+                <option value="never">Never</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>On a scale from 1 to 5, how would you rate the current cycling infrastructure (e.g., bike lanes, bike racks) in our community?</legend>
+            <label for="scale1"><input id="scale1" type="radio" name="scale" value="1" /> 1 (Poor)</label><br>
+            <label for="scale2"><input id="scale2" type="radio" name="scale" value="2"/> 2</label><br>
+            <label for="scale3"><input id="scale3" type="radio" name="scale" value="3"/> 3 (Average)</label><br>
+            <label for="scale4"><input id="scale4" type="radio" name="scale" value="4"/> 4</label><br>
+            <label for="scale5"><input id="scale5" type="radio" name="scale" value="5"/> 5 (Excellent)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your primary reason for cycling? (Select all that apply)</legend>
+            <input type="checkbox" class="check" name="reason" value="commuting">Commuting to work/school<br>
+            <input type="checkbox" class="check" name="reason" value="exercise">Exercise/health<br>
+            <input type="checkbox" class="check" name="reason" value="errands">Errands<br>
+            <input type="checkbox" class="check" name="reason" value="other">Other<br>
+        </fieldset>
+
+        <fieldset>
+            <label for="addInf">Do you have any additional comments or suggestions on how we can promote and improve cycling in our community?</label>
+            <textarea id="addInf" name="addInf" placeholder="I like our bike lanes..."></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
